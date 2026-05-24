@@ -109,7 +109,6 @@
               '<div class="item__name">' + esc(it.name) + '</div>' +
               '<div class="item__meta">' +
                 (it.brand && it.brand !== '—' ? '<span class="item__brand">' + esc(it.brand) + '</span>' : '') +
-                '<span class="item__price">' + esc(t('price_from')) + fmtPrice(it.price_from) + '</span>' +
                 availTag +
               '</div>' +
             '</div>' +
