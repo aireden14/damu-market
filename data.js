@@ -43,14 +43,14 @@ window.DAMU_DATA = {
       image: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=600&auto=format&fit=crop&q=70',
       image_alt: 'Мешки сухих строительных смесей на складе',
       items: [
-        { name: 'Штукатурка Knauf Ротбанд 30 кг', brand: 'Knauf', price_from: 5500, available: true },
-        { name: 'Шпаклёвка Knauf Финиш ПГ 25 кг', brand: 'Knauf', price_from: 4200, available: true },
-        { name: 'Клей плиточный Ceresit CM 11 25 кг', brand: 'Ceresit', price_from: 4800, available: true },
-        { name: 'Наливной пол Bergauf Boden 25 кг', brand: 'Bergauf', price_from: 5900, available: true },
-        { name: 'Грунтовка Ceresit CT 17 10 л', brand: 'Ceresit', price_from: 7800, available: true },
-        { name: 'Штукатурка цементная Геркулес 25 кг', brand: 'Геркулес', price_from: 2300, available: true },
-        { name: 'Клей для газоблока Bergauf Block 25 кг', brand: 'Bergauf', price_from: 3400, available: false },
-        { name: 'Гидроизоляция Ceresit CR 65 20 кг', brand: 'Ceresit', price_from: 12500, available: true }
+        { name: 'Штукатурка гипсовая', brand: '—', available: true },
+        { name: 'Штукатурка цементная', brand: '—', available: true },
+        { name: 'Шпаклёвка финишная', brand: '—', available: true },
+        { name: 'Клей для плитки', brand: '—', available: true },
+        { name: 'Наливной пол', brand: '—', available: true },
+        { name: 'Грунтовка', brand: '—', available: true },
+        { name: 'Клей для газоблока', brand: '—', available: true },
+        { name: 'Гидроизоляция', brand: '—', available: true }
       ]
     },
     {
@@ -60,13 +60,13 @@ window.DAMU_DATA = {
       image: 'https://images.unsplash.com/photo-1607400201889-565b1ee75f8e?w=600&auto=format&fit=crop&q=70',
       image_alt: 'Листы гипсокартона на стеллаже',
       items: [
-        { name: 'ГКЛ Knauf 2500×1200×12,5 мм', brand: 'Knauf', price_from: 2700, available: true },
-        { name: 'ГКЛВ Knauf влагостойкий 2500×1200×12,5 мм', brand: 'Knauf', price_from: 3600, available: true },
-        { name: 'ГКЛО Knauf огнестойкий 2500×1200×12,5 мм', brand: 'Knauf', price_from: 4200, available: false },
-        { name: 'Профиль CD-60 направляющий 3 м', brand: 'Knauf', price_from: 1350, available: true },
-        { name: 'Профиль UD-27 стартовый 3 м', brand: 'Knauf', price_from: 950, available: true },
-        { name: 'Подвес прямой 60×27, упак. 100 шт', brand: 'Knauf', price_from: 4200, available: true },
-        { name: 'Лента серпянка 50 мм × 45 м', brand: 'Knauf', price_from: 850, available: true }
+        { name: 'Гипсокартон стандартный', brand: '—', available: true },
+        { name: 'Гипсокартон влагостойкий', brand: '—', available: true },
+        { name: 'Гипсокартон огнестойкий', brand: '—', available: true },
+        { name: 'Профиль направляющий', brand: '—', available: true },
+        { name: 'Профиль стоечный', brand: '—', available: true },
+        { name: 'Подвес прямой', brand: '—', available: true },
+        { name: 'Лента серпянка', brand: '—', available: true }
       ]
     },
     {
@@ -76,13 +76,14 @@ window.DAMU_DATA = {
       image: 'https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=600&auto=format&fit=crop&q=70',
       image_alt: 'Палитра красок и кисти',
       items: [
-        { name: 'Краска Caparol Samtex 7 матовая 2,5 л', brand: 'Caparol', price_from: 11500, available: true },
-        { name: 'Краска Tikkurila Harmony 2,7 л', brand: 'Tikkurila', price_from: 14900, available: true },
-        { name: 'Эмаль ПФ-115 белая Лакра 2,7 кг', brand: 'Лакра', price_from: 4800, available: true },
-        { name: 'Грунт-эмаль по ржавчине Hammerite 0,75 л', brand: 'Hammerite', price_from: 6900, available: true },
-        { name: 'Валик меховой 250 мм + бугель', brand: 'Stayer', price_from: 1400, available: true },
-        { name: 'Кисть плоская 75 мм натуральная щетина', brand: 'Stayer', price_from: 950, available: true },
-        { name: 'Малярная лента 48 мм × 25 м', brand: 'Зубр', price_from: 480, available: true }
+        { name: 'Краска интерьерная', brand: '—', available: true },
+        { name: 'Краска фасадная', brand: '—', available: true },
+        { name: 'Эмаль ПФ-115', brand: '—', available: true },
+        { name: 'Грунт-эмаль по ржавчине', brand: '—', available: true },
+        { name: 'Лак по дереву', brand: '—', available: true },
+        { name: 'Валик малярный', brand: '—', available: true },
+        { name: 'Кисть малярная', brand: '—', available: true },
+        { name: 'Малярная лента', brand: '—', available: true }
       ]
     },
     {
@@ -92,13 +93,13 @@ window.DAMU_DATA = {
       image: 'https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=600&auto=format&fit=crop&q=70',
       image_alt: 'Электроинструмент: дрель и шуруповёрт',
       items: [
-        { name: 'Перфоратор Makita HR2470 780 Вт', brand: 'Makita', price_from: 62000, available: true },
-        { name: 'Дрель ударная Bosch GSB 16 RE 750 Вт', brand: 'Bosch', price_from: 38500, available: true },
-        { name: 'Шуруповёрт аккум. Makita DF333DWAE 12V', brand: 'Makita', price_from: 49000, available: true },
-        { name: 'Болгарка DeWALT DWE4157 125 мм 900 Вт', brand: 'DeWALT', price_from: 41000, available: true },
-        { name: 'Лобзик Bosch GST 90 BE 650 Вт', brand: 'Bosch', price_from: 52000, available: false },
-        { name: 'Циркулярка Makita HS7601 1200 Вт', brand: 'Makita', price_from: 58000, available: true },
-        { name: 'Краскопульт электрический Зубр 350 Вт', brand: 'Зубр', price_from: 12500, available: true }
+        { name: 'Перфоратор', brand: '—', available: true },
+        { name: 'Дрель ударная', brand: '—', available: true },
+        { name: 'Шуруповёрт аккумуляторный', brand: '—', available: true },
+        { name: 'Болгарка (УШМ)', brand: '—', available: true },
+        { name: 'Лобзик электрический', brand: '—', available: true },
+        { name: 'Циркулярная пила', brand: '—', available: true },
+        { name: 'Краскопульт электрический', brand: '—', available: true }
       ]
     },
     {
@@ -108,13 +109,13 @@ window.DAMU_DATA = {
       image: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&auto=format&fit=crop&q=70',
       image_alt: 'Ручной слесарный инструмент на верстаке',
       items: [
-        { name: 'Молоток слесарный 500 г Stanley', brand: 'Stanley', price_from: 3800, available: true },
-        { name: 'Набор отвёрток 6 шт. Stayer SL/PH', brand: 'Stayer', price_from: 4200, available: true },
-        { name: 'Рулетка Stanley FatMax 5 м', brand: 'Stanley', price_from: 4900, available: true },
-        { name: 'Уровень пузырьковый 1000 мм Зубр', brand: 'Зубр', price_from: 3600, available: true },
-        { name: 'Ножовка по дереву 500 мм Stanley', brand: 'Stanley', price_from: 4200, available: true },
-        { name: 'Набор ключей рожково-накидных 12 шт.', brand: 'Stayer', price_from: 9800, available: true },
-        { name: 'Шпатель нержавеющий 100 мм', brand: 'Зубр', price_from: 650, available: true }
+        { name: 'Молоток слесарный', brand: '—', available: true },
+        { name: 'Набор отвёрток', brand: '—', available: true },
+        { name: 'Рулетка измерительная', brand: '—', available: true },
+        { name: 'Уровень пузырьковый', brand: '—', available: true },
+        { name: 'Ножовка по дереву', brand: '—', available: true },
+        { name: 'Набор ключей', brand: '—', available: true },
+        { name: 'Шпатель', brand: '—', available: true }
       ]
     },
     {
@@ -124,13 +125,13 @@ window.DAMU_DATA = {
       image: 'https://images.unsplash.com/photo-1581244277943-fe4a9c777189?w=600&auto=format&fit=crop&q=70',
       image_alt: 'Сантехнические трубы и фитинги',
       items: [
-        { name: 'Труба полипропилен PN20 25 мм, 4 м', brand: 'Valtec', price_from: 1850, available: true },
-        { name: 'Уголок PPR 25 мм × 90°', brand: 'Valtec', price_from: 180, available: true },
-        { name: 'Смеситель для кухни Gappo G4398', brand: 'Gappo', price_from: 18500, available: true },
-        { name: 'Смеситель для ванны Grohe Start', brand: 'Grohe', price_from: 42000, available: true },
-        { name: 'Унитаз-компакт Cersanit Parva', brand: 'Cersanit', price_from: 56000, available: true },
-        { name: 'Сифон для раковины 1 1/2" с переливом', brand: 'АНИ', price_from: 1900, available: true },
-        { name: 'Шланг гибкий 1/2" 60 см нерж.', brand: 'TIM', price_from: 980, available: true }
+        { name: 'Трубы полипропиленовые', brand: '—', available: true },
+        { name: 'Фитинги PPR', brand: '—', available: true },
+        { name: 'Смеситель для кухни', brand: '—', available: true },
+        { name: 'Смеситель для ванны', brand: '—', available: true },
+        { name: 'Унитаз-компакт', brand: '—', available: true },
+        { name: 'Сифон', brand: '—', available: true },
+        { name: 'Гибкая подводка', brand: '—', available: true }
       ]
     },
     {
@@ -140,13 +141,13 @@ window.DAMU_DATA = {
       image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=70',
       image_alt: 'Электрический кабель и автоматы',
       items: [
-        { name: 'Кабель ВВГ-нг 3×2,5 мм², 100 м', brand: 'KazEnergyKabel', price_from: 38000, available: true },
-        { name: 'Кабель ВВГ-нг 3×1,5 мм², 100 м', brand: 'KazEnergyKabel', price_from: 26000, available: true },
-        { name: 'Автомат IEK ВА47-29 1P 16А', brand: 'IEK', price_from: 850, available: true },
-        { name: 'УЗО IEK ВД1-63 2P 32А 30мА', brand: 'IEK', price_from: 4600, available: true },
-        { name: 'Розетка Schneider Glossa белая 2P+E', brand: 'Schneider', price_from: 2200, available: true },
-        { name: 'Выключатель Schneider Glossa одноклавишный', brand: 'Schneider', price_from: 1850, available: true },
-        { name: 'Светильник LED накладной 18 Вт 6500K', brand: 'Эра', price_from: 3400, available: true }
+        { name: 'Кабель ВВГ-нг', brand: '—', available: true },
+        { name: 'Автоматический выключатель', brand: '—', available: true },
+        { name: 'УЗО (устройство защитного отключения)', brand: '—', available: true },
+        { name: 'Розетки', brand: '—', available: true },
+        { name: 'Выключатели', brand: '—', available: true },
+        { name: 'Светильник LED', brand: '—', available: true },
+        { name: 'Гофра и кабель-каналы', brand: '—', available: true }
       ]
     },
     {
@@ -156,13 +157,13 @@ window.DAMU_DATA = {
       image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&auto=format&fit=crop&q=70',
       image_alt: 'Саморезы и крепёжные элементы',
       items: [
-        { name: 'Саморез по дереву 3,5×35 мм, упак. 1 кг', brand: 'Зубр', price_from: 1400, available: true },
-        { name: 'Саморез по металлу 4,2×16 мм, упак. 1 кг', brand: 'Зубр', price_from: 1800, available: true },
-        { name: 'Дюбель-гвоздь 6×40 мм, упак. 100 шт.', brand: 'Stayer', price_from: 950, available: true },
-        { name: 'Анкер клиновой 10×100 мм, 50 шт.', brand: 'Sormat', price_from: 7800, available: true },
-        { name: 'Перчатки ХБ с ПВХ-точкой, 10 пар', brand: '—', price_from: 1200, available: true },
-        { name: 'Мешок строительный 70 л, упак. 100 шт.', brand: '—', price_from: 4500, available: true },
-        { name: 'Лента армированная фольга 75 мм × 50 м', brand: 'Tytan', price_from: 2900, available: true }
+        { name: 'Саморезы по дереву', brand: '—', available: true },
+        { name: 'Саморезы по металлу', brand: '—', available: true },
+        { name: 'Дюбель-гвозди', brand: '—', available: true },
+        { name: 'Анкеры', brand: '—', available: true },
+        { name: 'Перчатки рабочие', brand: '—', available: true },
+        { name: 'Мешки строительные', brand: '—', available: true },
+        { name: 'Изолента и скотч', brand: '—', available: true }
       ]
     }
   ],
