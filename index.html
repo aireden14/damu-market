@@ -56,6 +56,11 @@
         <span class="hdr__name">DamuMarket</span>
       </a>
 
+      <div class="lang-toggle" role="radiogroup" aria-label="Тіл / Язык">
+        <button class="lang-toggle__btn is-active" data-lang="ru" type="button" aria-pressed="true">RU</button>
+        <button class="lang-toggle__btn" data-lang="kz" type="button" aria-pressed="false">ҚЗ</button>
+      </div>
+
       <button class="hdr__search-toggle js-search-open" aria-label="Открыть поиск" type="button">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
       </button>
@@ -66,7 +71,7 @@
       </a>
 
       <a class="hdr__wa btn btn--wa" id="hdr-wa" href="https://wa.me/77002152893" target="_blank" rel="noopener">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1s-1.3-.5-2.4-1.5c-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4-.1-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.4 1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.2L2 22l4.9-1.3c1.5.8 3.3 1.3 5.1 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.2-.5-4.6-1.3l-.3-.2-3.4.9.9-3.3-.2-.3C3.5 14.7 3 13.4 3 12c0-5 4-9 9-9s9 4 9 9-4 8.2-9 8.2z"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1s-1.3-.5-2.4-1.5c-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4-.1-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.4 1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.2L2 22l4.9-1.3c1.5.8 3.3 1.3 5.1 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
         <span>WhatsApp</span>
       </a>
     </div>
@@ -75,7 +80,7 @@
     <div class="search-bar" id="search-bar" hidden>
       <div class="wrap search-bar__row">
         <svg class="search-bar__icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-        <input class="search-bar__input" id="search-input" type="search" inputmode="search" placeholder="Что ищем? Например: гипсокартон, makita, краска" autocomplete="off">
+        <input class="search-bar__input" id="search-input" type="search" inputmode="search" data-i18n-placeholder="search_placeholder" placeholder="Что ищем? Например: гипсокартон, makita, краска" autocomplete="off">
         <button class="search-bar__clear js-search-close" type="button" aria-label="Закрыть поиск">✕</button>
       </div>
     </div>
@@ -87,15 +92,15 @@
     <section class="hero">
       <div class="wrap hero__grid">
         <div class="hero__copy">
-          <h1 class="hero__title">Стройматериалы и инструмент с&nbsp;доставкой по&nbsp;Алматы за&nbsp;2&nbsp;часа</h1>
-          <p class="hero__sub">Более 3 500 позиций на складе. Привезём к подъезду или на объект. Работаем с физлицами, ИП и ТОО.</p>
+          <h1 class="hero__title" data-i18n="hero_title">Стройматериалы и инструмент с доставкой по Алматы за 2 часа</h1>
+          <p class="hero__sub" data-i18n="hero_sub">Более 3 500 позиций на складе. Привезём к подъезду или на объект. Работаем с физлицами, ИП и ТОО.</p>
 
           <div class="hero__cta">
-            <a class="btn btn--wa btn--lg" href="https://wa.me/77002152893?text=Здравствуйте!%20Хочу%20уточнить%20наличие%20и%20сделать%20заказ." target="_blank" rel="noopener">
+            <a class="btn btn--wa btn--lg" id="hero-wa" href="https://wa.me/77002152893?text=Здравствуйте!%20Хочу%20уточнить%20наличие%20и%20сделать%20заказ." target="_blank" rel="noopener">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1s-1.3-.5-2.4-1.5c-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4-.1-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.4 1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.2L2 22l4.9-1.3c1.5.8 3.3 1.3 5.1 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
-              Написать в WhatsApp
+              <span data-i18n="wa_write">Написать в WhatsApp</span>
             </a>
-            <a class="btn btn--ghost btn--lg" href="#catalog">Каталог ↓</a>
+            <a class="btn btn--ghost btn--lg" href="#catalog" data-i18n="catalog_link">Каталог ↓</a>
           </div>
 
           <ul class="hero__stats" id="hero-stats"></ul>
@@ -122,21 +127,21 @@
     <section class="catalog" id="catalog">
       <div class="wrap">
         <header class="sec-head">
-          <h2 class="sec-head__title">Каталог</h2>
-          <p class="sec-head__sub">Тапните на категорию — раскроется прайс с популярными позициями. На каждой строке — кнопка WhatsApp с уже готовым сообщением.</p>
+          <h2 class="sec-head__title" data-i18n="catalog_title">Каталог</h2>
+          <p class="sec-head__sub" data-i18n="catalog_sub">Тапните на категорию — раскроется прайс с популярными позициями. На каждой строке — кнопка WhatsApp с уже готовым сообщением.</p>
         </header>
 
         <div class="catalog__search">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-          <input id="catalog-search" type="search" inputmode="search" placeholder="Поиск по каталогу: бренд, название…" autocomplete="off">
+          <input id="catalog-search" type="search" inputmode="search" data-i18n-placeholder="catalog_search_placeholder" placeholder="Поиск по каталогу: бренд, название…" autocomplete="off">
           <button class="catalog__search-clear" id="catalog-search-clear" type="button" hidden aria-label="Очистить">✕</button>
         </div>
 
         <div class="catalog__grid" id="catalog-grid"></div>
 
         <div class="catalog__empty" id="catalog-empty" hidden>
-          <p>По запросу <strong id="catalog-empty-query"></strong> ничего не нашли. Напишите нам — подберём по описанию.</p>
-          <a class="btn btn--wa btn--lg" id="catalog-empty-wa" href="https://wa.me/77002152893" target="_blank" rel="noopener">Спросить в WhatsApp</a>
+          <p id="catalog-empty-text"><span data-i18n="not_found_pre">По запросу </span><strong id="catalog-empty-query"></strong><span data-i18n="not_found_post"> ничего не нашли. Напишите нам — подберём по описанию.</span></p>
+          <a class="btn btn--wa btn--lg" id="catalog-empty-wa" href="https://wa.me/77002152893" target="_blank" rel="noopener" data-i18n="ask_in_wa">Спросить в WhatsApp</a>
         </div>
       </div>
     </section>
@@ -145,8 +150,8 @@
     <section class="steps" aria-label="Как заказать">
       <div class="wrap">
         <header class="sec-head">
-          <h2 class="sec-head__title">Как заказать</h2>
-          <p class="sec-head__sub">Три шага. Никаких корзин и регистраций.</p>
+          <h2 class="sec-head__title" data-i18n="steps_title">Как заказать</h2>
+          <p class="sec-head__sub" data-i18n="steps_sub">Три шага. Никаких корзин и регистраций.</p>
         </header>
         <ol class="steps__list" id="steps-list"></ol>
       </div>
@@ -155,7 +160,7 @@
     <!-- BRANDS -->
     <section class="brands" aria-label="Бренды на складе">
       <div class="wrap">
-        <p class="brands__title">Работаем напрямую с производителями</p>
+        <p class="brands__title" data-i18n="brands_title">Работаем напрямую с производителями</p>
         <ul class="brands__list" id="brands-list"></ul>
       </div>
     </section>
@@ -164,7 +169,7 @@
     <section class="reviews" aria-label="Отзывы">
       <div class="wrap">
         <header class="sec-head">
-          <h2 class="sec-head__title">Что говорят клиенты</h2>
+          <h2 class="sec-head__title" data-i18n="reviews_title">Что говорят клиенты</h2>
         </header>
         <ul class="reviews__list" id="reviews-list"></ul>
       </div>
@@ -174,39 +179,39 @@
     <section class="contacts" id="contacts">
       <div class="wrap">
         <header class="sec-head">
-          <h2 class="sec-head__title">Контакты и&nbsp;адрес</h2>
-          <p class="sec-head__sub">Заберите сами или закажите доставку. Показывайте этот экран продавцу — менеджер уже в курсе.</p>
+          <h2 class="sec-head__title" data-i18n="contacts_title">Контакты и адрес</h2>
+          <p class="sec-head__sub" data-i18n="contacts_sub">Заберите сами или закажите доставку. Показывайте этот экран продавцу — менеджер уже в курсе.</p>
         </header>
 
         <div class="contacts__grid">
 
           <div class="contacts__card contacts__card--main">
             <div class="contacts__row">
-              <span class="contacts__label">Телефон</span>
+              <span class="contacts__label" data-i18n="label_phone">Телефон</span>
               <a class="contacts__value contacts__value--lg" href="tel:+77002152893">+7 700 215 28 93</a>
             </div>
             <div class="contacts__row">
-              <span class="contacts__label">WhatsApp</span>
+              <span class="contacts__label" data-i18n="label_wa">WhatsApp</span>
               <a class="contacts__value contacts__value--lg" href="https://wa.me/77002152893" target="_blank" rel="noopener">+7 700 215 28 93</a>
             </div>
             <div class="contacts__row">
-              <span class="contacts__label">Email</span>
+              <span class="contacts__label" data-i18n="label_email">Email</span>
               <a class="contacts__value" href="mailto:sales@damumarket.kz">sales@damumarket.kz</a>
             </div>
             <div class="contacts__row">
-              <span class="contacts__label">Адрес</span>
+              <span class="contacts__label" data-i18n="label_address">Адрес</span>
               <span class="contacts__value" id="contacts-address">г. Алматы, ул. Толе би 285</span>
             </div>
             <div class="contacts__row">
-              <span class="contacts__label">Часы работы</span>
+              <span class="contacts__label" data-i18n="label_hours">Часы работы</span>
               <div class="contacts__value">
                 <ul class="contacts__hours" id="contacts-hours"></ul>
               </div>
             </div>
 
             <div class="contacts__cta">
-              <a class="btn btn--wa btn--lg" href="https://wa.me/77002152893?text=Здравствуйте!%20Хочу%20сделать%20заказ." target="_blank" rel="noopener">Написать в WhatsApp</a>
-              <a class="btn btn--ghost btn--lg" href="tel:+77002152893">Позвонить</a>
+              <a class="btn btn--wa btn--lg" id="contacts-wa" href="https://wa.me/77002152893?text=Здравствуйте!%20Хочу%20сделать%20заказ." target="_blank" rel="noopener"><span data-i18n="wa_write">Написать в WhatsApp</span></a>
+              <a class="btn btn--ghost btn--lg" href="tel:+77002152893"><span data-i18n="call_btn">Позвонить</span></a>
             </div>
           </div>
 
@@ -230,24 +235,24 @@
                   <circle r="5" cy="-2" fill="#fff"/>
                 </g>
                 <text x="200" y="180" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="14" font-weight="700" fill="#1a3a8f">DamuMarket</text>
-                <text x="200" y="198" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#5a6a86">ул. Толе би 285</text>
+                <text x="200" y="198" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#5a6a86" id="map-address-text">ул. Толе би 285</text>
               </svg>
             </div>
             <div class="contacts__map-actions">
-              <a class="btn btn--ghost" id="map-open" href="#" target="_blank" rel="noopener">Открыть в 2GIS</a>
-              <a class="btn btn--primary" id="map-route" href="#" target="_blank" rel="noopener">Построить маршрут</a>
+              <a class="btn btn--ghost" id="map-open" href="#" target="_blank" rel="noopener" data-i18n="map_open">Открыть в 2GIS</a>
+              <a class="btn btn--primary" id="map-route" href="#" target="_blank" rel="noopener" data-i18n="map_route">Построить маршрут</a>
             </div>
           </div>
 
           <div class="contacts__card contacts__card--legal">
-            <h3 class="contacts__h3">Для безналичной оплаты</h3>
+            <h3 class="contacts__h3" data-i18n="legal_title">Для безналичной оплаты</h3>
             <dl class="legal">
-              <dt>Получатель</dt><dd id="legal-name">ТОО «DamuMarket» — <em>уточняется</em></dd>
-              <dt>БИН</dt><dd id="legal-bin">— <em>попросите у менеджера</em></dd>
-              <dt>IBAN</dt><dd id="legal-iban">— <em>попросите у менеджера</em></dd>
-              <dt>Банк</dt><dd id="legal-bank">— <em>попросите у менеджера</em></dd>
+              <dt data-i18n="legal_recipient">Получатель</dt><dd id="legal-name"></dd>
+              <dt data-i18n="legal_bin">БИН</dt><dd id="legal-bin"></dd>
+              <dt data-i18n="legal_iban">IBAN</dt><dd id="legal-iban"></dd>
+              <dt data-i18n="legal_bank">Банк</dt><dd id="legal-bank"></dd>
             </dl>
-            <p class="contacts__hint">Договор и счёт на оплату пришлём в WhatsApp или на email в течение часа. ЭСФ оформляем в день отгрузки.</p>
+            <p class="contacts__hint" data-i18n="legal_hint">Договор и счёт на оплату пришлём в WhatsApp или на email в течение часа. ЭСФ оформляем в день отгрузки.</p>
           </div>
 
         </div>
@@ -258,7 +263,7 @@
     <section class="faq" aria-label="Частые вопросы">
       <div class="wrap">
         <header class="sec-head">
-          <h2 class="sec-head__title">Частые вопросы</h2>
+          <h2 class="sec-head__title" data-i18n="faq_title">Частые вопросы</h2>
         </header>
         <ul class="faq__list" id="faq-list"></ul>
       </div>
@@ -274,10 +279,10 @@
           <span class="hdr__logo" aria-hidden="true">D</span>
           <span class="hdr__name">DamuMarket</span>
         </div>
-        <p class="ftr__about">Стройматериалы и инструмент в Алматы. Доставка по городу за 2 часа.</p>
+        <p class="ftr__about" data-i18n="ftr_about">Стройматериалы и инструмент в Алматы. Доставка по городу за 2 часа.</p>
       </div>
       <div>
-        <h4 class="ftr__h4">Связь</h4>
+        <h4 class="ftr__h4" data-i18n="ftr_contact">Связь</h4>
         <ul class="ftr__list">
           <li><a href="tel:+77002152893">+7 700 215 28 93</a></li>
           <li><a href="https://wa.me/77002152893" target="_blank" rel="noopener">WhatsApp</a></li>
@@ -285,24 +290,24 @@
         </ul>
       </div>
       <div>
-        <h4 class="ftr__h4">Магазин</h4>
-        <ul class="ftr__list">
-          <li>ул. Толе би 285, Алматы</li>
-          <li>Пн–Сб: 9:00 – 19:00</li>
-          <li>Вс: 10:00 – 17:00</li>
+        <h4 class="ftr__h4" data-i18n="ftr_store">Магазин</h4>
+        <ul class="ftr__list" id="ftr-store-list">
+          <li id="ftr-address">ул. Толе би 285, Алматы</li>
+          <li id="ftr-hours-1">Пн–Сб: 9:00 – 19:00</li>
+          <li id="ftr-hours-2">Вс: 10:00 – 17:00</li>
         </ul>
       </div>
     </div>
-    <div class="wrap ftr__copy">© <span id="ftr-year">2026</span> DamuMarket. Все права защищены.</div>
+    <div class="wrap ftr__copy">© <span id="ftr-year">2026</span> DamuMarket. <span data-i18n="ftr_rights">Все права защищены.</span></div>
   </footer>
 
   <!-- STICKY BOTTOM BAR (mobile only) -->
   <nav class="bottom-bar" aria-label="Быстрая связь">
     <a class="bottom-bar__btn bottom-bar__btn--call" href="tel:+77002152893">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-      <span>Позвонить</span>
+      <span data-i18n="call_btn">Позвонить</span>
     </a>
-    <a class="bottom-bar__btn bottom-bar__btn--wa" href="https://wa.me/77002152893?text=Здравствуйте!%20Хочу%20сделать%20заказ." target="_blank" rel="noopener">
+    <a class="bottom-bar__btn bottom-bar__btn--wa" id="bottom-wa" href="https://wa.me/77002152893?text=Здравствуйте!%20Хочу%20сделать%20заказ." target="_blank" rel="noopener">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.7.2-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1s-1.3-.5-2.4-1.5c-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4-.1-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.4 1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.2L2 22l4.9-1.3c1.5.8 3.3 1.3 5.1 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
       <span>WhatsApp</span>
     </a>
