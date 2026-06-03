@@ -1,61 +1,43 @@
-# DamuMarket — лендинг
+# ITAKA General Trading Co. — Website
 
-Mobile-first лендинг строительного магазина в Алматы. Чистый HTML/CSS/JS, без сборки.
+Static, single-page marketing site for **ITAKA General Trading Co. L.L.C** — critical energy minerals (Fluorspar, Rare Earth Elements) from Mongolia & Kazakhstan.
 
-## Быстрый запуск локально
+No build step, no frameworks, no dependencies. Just HTML, CSS and a little vanilla JavaScript — ready for GitHub Pages.
 
-```bash
-cd apps/damu-market
-python3 -m http.server 8000
-# открыть http://localhost:8000
-```
-
-## Структура
+## Files
 
 ```
-damu-market/
-├── index.html         # вся страница
-├── styles.css         # стили (mobile-first)
-├── script.js          # рендер из data.js, поиск, аккордеоны
-├── data.js            # ↑ весь контент: категории, цены, контакты, отзывы
-├── favicon.svg
-├── .nojekyll          # для GitHub Pages
-├── README.md          # вы здесь
-└── CONTENT.md         # как менять контент без программиста
+index.html        — all page content
+styles.css        — liquid-glass styling
+script.js         — nav blur, mobile menu, scroll reveal
+.nojekyll         — tells GitHub Pages to serve files as-is
+assets/
+  logo.svg        — ITAKA logo (inherits color via currentColor)
+  favicon.svg     — browser tab icon
+  img/            — photographs
 ```
 
-**Главное:** весь редактируемый контент — в `data.js`. Никаких изменений в HTML для смены цены/позиции/телефона/часов.
+## Publish on GitHub Pages
 
-## Деплой на GitHub Pages
+1. Create a new repository on GitHub (e.g. `itaka-website`).
+2. Upload **all** files in this folder, keeping the structure (drag-and-drop the contents, not the parent folder).
+3. In the repo go to **Settings → Pages**.
+4. Under **Build and deployment → Source** choose **Deploy from a branch**.
+5. Branch: `main`, folder: `/ (root)` → **Save**.
+6. Wait ~1 minute. Your site is live at `https://<username>.github.io/itaka-website/`.
 
-1. Закоммитьте `apps/damu-market/` в репозиторий.
-2. В настройках репозитория: **Settings → Pages → Source: Deploy from a branch**.
-3. Branch: `main` (или ваш), folder: `/apps/damu-market`. Если Pages не позволяет указать подпапку — используйте gh-pages action или скопируйте содержимое `apps/damu-market` в корень отдельной ветки `gh-pages`.
-4. Сайт откроется на `https://<your-username>.github.io/<repo>/`.
+### Custom domain (optional, e.g. itaka.com.kz)
+1. Settings → Pages → **Custom domain** → enter `itaka.com.kz` → Save.
+2. At your domain registrar add a `CNAME` record pointing `www` to `<username>.github.io`
+   (and the four GitHub `A` records for the apex domain).
+3. Enable **Enforce HTTPS** once the certificate is issued.
 
-## Что проверить перед показом клиенту
+## Editing content
+All text is plain English in `index.html`. Search for the section you want and edit the text directly. Colours live at the top of `styles.css` under `:root`. Replace any photo by dropping a new file into `assets/img/` and updating the matching `src` in `index.html`.
 
-- [ ] Открыть с реального телефона (не только DevTools)
-- [ ] Тапнуть «Позвонить» — открывается номеронабиратель
-- [ ] Тапнуть «WhatsApp» — открывается чат с prefilled-текстом
-- [ ] Раскрыть категорию «Сухие смеси», тапнуть кнопку WA у любой позиции — в сообщении должно быть название товара
-- [ ] Ввести в поиск «makita» — раскрывается категория «Электроинструмент», видны позиции Makita
-- [ ] Ввести в поиск «xyz123» — показывается empty-state с кнопкой «Спросить в WhatsApp»
-- [ ] На iPhone проверить, что bottom-bar не залезает на home indicator
-- [ ] Заменить плейсхолдеры в `data.js`: реквизиты, реальный адрес магазина, отзывы
-
-## Что специально НЕ делали (и почему)
-
-- **PWA-манифест** — лендинг стройбазы никто не «устанавливает».
-- **2GIS iframe** — 200+ КБ JS и сторонние куки. Используется статичный SVG-preview + deep-link.
-- **Google Fonts** — системный стек шрифтов рендерится мгновенно, без сетевого запроса.
-- **Hero-анимации с инструментами** — статичное фото внушает больше доверия и не тормозит.
-- **Dark mode** — магазин про реальные цвета товара, принудительно `color-scheme: light`.
-- **Двуязычие RU/KZ** — отложено. В перспективе: переключатель в шапке + дубль `data.js` для KZ.
-
-## TODO (на будущее, если зайдёт)
-
-- KZ-локаль через отдельный `data.kz.js` и переключатель в шапке
-- Реальная карта 2GIS Static API (требует API-ключ)
-- Подключение Яндекс.Метрики или Plausible (заглушка в `<head>` готова к вставке)
-- Микро-CMS на базе одного JSON в GitHub (для менеджера-нетехнаря)
+## Contact details on the site
+- Company: ITAKA General Trading Co. L.L.C
+- CEO: Yermek Sadykov
+- Email: yermek@itaka.com.kz · info@itaka.com.kz
+- Phone: +7 701 543 4321 · WhatsApp: +39 380 693 0113
+- Office: SS BC2, Jabal Ali Industrial First, Dubai, UAE
