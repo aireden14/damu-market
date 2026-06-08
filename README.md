@@ -4,18 +4,12 @@ Static, single-page marketing site for **ITAKA General Trading Co. L.L.C** — c
 
 No build step, no frameworks, no dependencies. Just HTML, CSS and a little vanilla JavaScript — ready for GitHub Pages.
 
-## v3 GitHub-only page
+## v4 GitHub-only page
 
-The `itaka-v3/` folder is a GitHub Pages copy without a `CNAME` file. It is intended to be opened through the default GitHub Pages URL:
-
-```text
-https://aireden14.github.io/damu-market/itaka-v3/
-```
-
-The root site contains the same v3 page and uses the custom GitHub Pages domain:
+The `itaka-v4/` folder is the active GitHub Pages copy. The root `CNAME` file is intentionally not used, so the site stays available through the default GitHub Pages URL:
 
 ```text
-https://www.itaka.com.kz/
+https://aireden14.github.io/damu-market/itaka-v4/
 ```
 
 ## Files
