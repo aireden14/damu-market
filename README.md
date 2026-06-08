@@ -12,6 +12,12 @@ The `itaka-v3/` folder is a GitHub Pages copy without a `CNAME` file. It is inte
 https://aireden14.github.io/damu-market/itaka-v3/
 ```
 
+The root site contains the same v3 page and uses the custom GitHub Pages domain:
+
+```text
+https://www.itaka.com.kz/
+```
+
 ## Files
 
 ```
